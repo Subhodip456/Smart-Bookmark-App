@@ -29,7 +29,7 @@ export default function Home() {
     await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: "https://smart-bookmark-app-woad-psi.vercel.app/auth/callback",
+        redirectTo: "https://smart-bookmark-app-woad-psi.vercel.app/dashboard",
       },
     });
   };
