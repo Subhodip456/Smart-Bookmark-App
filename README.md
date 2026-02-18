@@ -1,3 +1,26 @@
+Challenges faced while creating the Smart Bookmark App
+Frontend not updating after bookmark insert
+Bookmarks were getting stored in Supabase but were not reflecting in the UI due to state not being refreshed properly after insertion.
+
+Handling Supabase async operations
+Managing async calls and ensuring proper error handling was necessary to avoid silent failures.
+
+Database Row Level Security (RLS) configuration
+Ensuring that users could only access their own bookmarks required correct Supabase RLS policy setup.
+
+Duplicate entries issue
+Multiple rows were getting inserted due to repeated trigger calls, which required validation before insert.
+
+Git branch mismatch (main vs master)
+Deployment issues occurred because GitHub default branch was different from the deployed branch.
+
+Environment variables in Vercel
+Deployment initially failed because Supabase URL and API keys were not configured correctly in Vercel.
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +57,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
