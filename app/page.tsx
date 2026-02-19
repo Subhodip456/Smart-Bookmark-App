@@ -29,7 +29,7 @@ export default function Home() {
     await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: "https://ndczwufytdgwumpxotqp.supabase.co/auth/v1/callback",
+        redirectTo: "https://ndczwufytdgwumpxotqp.supabase.co/dashboard",
       },
     });
   };
